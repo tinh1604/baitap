@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0
+}
+#div1 {
+    font-family: Arial;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    border: darkgrey 1px solid;
+    margin-top: 5%;
+    padding-top: 2%;
+    text-align: center;
+
+}
+#div2 {
+    text-align: justify;
+    margin-left: 10%;
+    margin-top: 20px;
+}
+select {
+    padding-right: 10px;
+    margin-right: 5%;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: darkgrey 1px solid;
+
+}
+button {
+    margin-left: 20px;
+}
+#content1 {
+    color: darkgrey;
+    font-size: 20px;
+}
+#content2 {
+    border-bottom: darkgrey 1px solid;
+    padding-right: 20%;
+    color: darkgrey;
+    font-size: 15px;
+
+}
+
+i {
+    margin-left: 50%;
+}

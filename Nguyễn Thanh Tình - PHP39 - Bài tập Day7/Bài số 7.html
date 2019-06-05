@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài số 7</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <meta name="viewport" content="width=device-width,
+     initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/css.bai1.css"/>
+
+</head>
+<body>
+<div id="block">
+    <div id="header">
+        <a href='#' style="text-decoration: none">Tìm max - min</a>
+    </div> <br/>
+    <form >
+        <label>Nhập vào số thứ nhất:</label>
+        <input type="text" id="number1" class="form-control" value=""> <br/>
+        <label>Nhập vào số thứ hai:</label>
+        <input type="text" id="number2" class="form-control" value=""> <br/>
+        <label>Nhập vào số thứ ba:</label>
+        <input type="text" id="number3" class="form-control" value=""> <br/>
+        <button type="button" class="btn btn-primary" onclick="myfunction()">Hiển thị max - min</button>
+        <br/>
+        <p id="showinfo1" style="color: green"> </p>
+        <p id="showinfo2" style="color: green"> </p>
+
+    </form>
+    <br/>
+    <script type="text/javascript">
+        function myfunction() {
+            var a =  document.getElementById('number1').value;
+            var b =  document.getElementById('number2').value;
+            var c =  document.getElementById('number3').value;
+            var max = Math.max(a,b,c);
+            var min = Math.min(a,b,c);
+            document.getElementById('showinfo1').innerHTML = "Số lớn nhất là: " +max;
+            document.getElementById('showinfo2').innerHTML = "Số nhỏ nhất là: " +min;
+        }
+    </script>
+</div>
+</body>
+</html>

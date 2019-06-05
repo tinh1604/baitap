@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài số 1</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <meta name="viewport" content="width=device-width,
+     initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/css.bai1.css"/>
+
+</head>
+<body>
+<div id="block">
+    <div id="header">
+        <a href='#' style="text-decoration: none">Thực hành toán tử số học</a>
+    </div>
+    <br/>
+
+    <form>
+        <label>Nhập vào số a:</label>
+        <input type="text" id="number1" class="form-control" value=""> <br/>
+        <label>Nhập vào số b:</label>
+        <input type="text" id="number2" class="form-control" value=""> <br/>
+        <br/> <br/>
+        <button type="button" class="btn btn-primary" onclick="myfunction1()">a+b</button>
+        <button type="button" class="btn btn-success" onclick="myfunction2()">a-b</button>
+        <button type="button" class="btn btn-danger" onclick="myfunction3()">a*b</button>
+        <button type="button" class="btn btn-warning" onclick="myfunction4()">a/b</button>
+        <button type="button" class="btn btn-info" onclick="myfunction5()">a%b</button>
+        <button type="button" class="btn btn-success" onclick="myfunction6()">a++</button>
+        <button type="button" class="btn btn-primary" onclick="myfunction7()">++a</button>
+        <button type="button" class="btn btn-danger" onclick="myfunction8()">a--</button>
+        <button type="button" class="btn btn-danger" onclick="myfunction9()">--a</button>
+        <br/>
+        <button type="reset" class="btn btn-warning">Reset dữ liệu</button>
+
+        <p id="showinfo" style="color: red"> </p>
+    </form>
+    <br/>
+    <script type="text/javascript">
+
+        function myfunction1() {
+            var a = document.getElementById("number1").value;
+            var b = document.getElementById("number2").value;
+            var a1 = parseInt(a);
+            var b1 = parseInt(b);
+            var value1 = a1 + b1;
+            if (a.length == 0 || b.length == 0) {
+                document.getElementById("showinfo").innerHTML = "Không được để trống dữ liệu";
+            }
+            else if (isNaN(value1) == true) {
+                document.getElementById("showinfo").innerHTML = "Cần nhập dữ liệu là số";
+            }
+            else {
+                document.getElementById("showinfo").innerHTML = "a+b = " + value1 ;
+            }
+        }
+
+        function myfunction2() {
+            var a = document.getElementById("number1").value;
+            var b = document.getElementById("number2").value;
+            var a1 = parseInt(a);
+            var b1 = parseInt(b);
+            var value2 = a1 - b1;
+            if (a.length == 0 || b.length == 0) {
+                document.getElementById("showinfo").innerHTML = "Không được để trống dữ liệu";
+            }
+            else if (isNaN(value2) == true) {
+                document.getElementById("showinfo").innerHTML = "Cần nhập dữ liệu là số";
+            }
+            else {
+                document.getElementById("showinfo").innerHTML = "a-b = " + value2;
+            }
+        }
+
+        function myfunction3() {
+            var a = document.getElementById("number1").value;
+            var b = document.getElementById("number2").value;
+            var a1 = parseInt(a);
+            var b1 = parseInt(b);
+            var value3 = a1 * b1;
+            if (a.length == 0 || b.length == 0) {
+                document.getElementById("showinfo").innerHTML = "Không được để trống dữ liệu";
+            }
+            else if (isNaN(value3) == true) {
+                document.getElementById("showinfo").innerHTML = "Cần nhập dữ liệu là số";
+            }
+            else {
+                document.getElementById("showinfo").innerHTML = "a*b = " + value3;
+            }
+        }
+
+        function myfunction4() {
+            var a = document.getElementById("number1").value;
+            var b = document.getElementById("number2").value;
+            var a1 = parseInt(a);
+            var b1 = parseInt(b);
+            var value4 = a1 / b1;
+            if (a.length == 0 || b.length == 0) {
+                document.getElementById("showinfo").innerHTML = "Không được để trống dữ liệu";
+            }
+            else if (isNaN(value4) == true) {
+                document.getElementById("showinfo").innerHTML = "Cần nhập dữ liệu là số";
+            }
+            else {
+                document.getElementById("showinfo").innerHTML = "a/b = " + value4;
+            }
+        }
+
+        function myfunction5() {
+            var a = document.getElementById("number1").value;
+            var b = document.getElementById("number2").value;
+            var a1 = parseInt(a);
+            var b1 = parseInt(b);
+            var value5 = a1 % b1;
+            if (a.length == 0 || b.length == 0) {
+                document.getElementById("showinfo").innerHTML = "Không được để trống dữ liệu";
+            }
+            else if (isNaN(value5) == true) {
+                document.getElementById("showinfo").innerHTML = "Cần nhập dữ liệu là số";
+            }
+            else {
+                document.getElementById("showinfo").innerHTML = "a%b = " + value5;
+            }
+        }
+
+        function myfunction6() {
+            var a = document.getElementById("number1").value;
+            var a1 = parseInt(a);
+            var value6 = a1++;
+            if (a.length == 0) {
+                document.getElementById("showinfo").innerHTML = "Không được để trống dữ liệu";
+            }
+            else if (isNaN(value6) == true) {
+                document.getElementById("showinfo").innerHTML = "Cần nhập dữ liệu là số";
+            }
+            else {
+                document.getElementById("showinfo").innerHTML = "a++ = " + value6;
+            }
+        }
+
+        function myfunction7() {
+            var a = document.getElementById("number1").value;
+            var a1 = parseInt(a);
+            var value7 = ++a1;
+            if (a.length == 0) {
+                document.getElementById("showinfo").innerHTML = "Không được để trống dữ liệu";
+            }
+            else if (isNaN(value7) == true) {
+                document.getElementById("showinfo").innerHTML = "Cần nhập dữ liệu là số";
+            }
+            else {
+                document.getElementById("showinfo").innerHTML = "++a = " + value7;
+            }
+        }
+
+        function myfunction8() {
+            var a = document.getElementById("number1").value;
+            var a1 = parseInt(a);
+            var value8 = a1--;
+            if (a.length == 0) {
+                document.getElementById("showinfo").innerHTML = "Không được để trống dữ liệu";
+            }
+            else if (isNaN(value8) == true) {
+                document.getElementById("showinfo").innerHTML = "Cần nhập dữ liệu là số";
+            }
+            else {
+                document.getElementById("showinfo").innerHTML = "a-- = " + value8;
+            }
+        }
+
+        function myfunction9() {
+            var a = document.getElementById("number1").value;
+            var a1 = parseInt(a);
+            var value9 = --a1;
+            if (a.length == 0) {
+                document.getElementById("showinfo").innerHTML = "Không được để trống dữ liệu";
+            }
+            else if (isNaN(value9) == true) {
+                document.getElementById("showinfo").innerHTML = "Cần nhập dữ liệu là số";
+            }
+            else {
+                document.getElementById("showinfo").innerHTML = "--a = " + value9;
+            }
+        }
+    </script>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài số 8</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <meta name="viewport" content="width=device-width,
+     initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/css.baichung.css"/>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+
+
+</head>
+<body>
+<div id="block">
+    <div id="header">
+        <p>Số chẵn lẻ</p>
+    </div>
+    <br/>
+    <form>
+        <label>Nhập số a</label>
+        <input type="text" id="number1" class="form-control" value=""> <br/>
+        <br/>
+        <button style="background: green; border: green" id="result" type="button" class="btn btn-primary"
+                onclick="myfunction()">Kiểm tra
+        </button>
+        <br/> <br/>
+        <p id="showinfo1" style="color: blue"></p>
+        <p id="showinfo2" style="color: blue"></p>
+    </form>
+    <br/>
+    <script type="text/javascript">
+
+        function myfunction() {
+            var x = document.getElementById("number1").value;
+            var a = parseInt(x)
+            var chan = '';
+            var le = '';
+            if (x == ''){
+                alert("Không được để trống dữ liệu")
+            }
+            else if (isNaN(x)) {
+                alert("Cần nhập dữ liệu là số")
+            }
+            else {
+                for (var i = 1; i <= a; i++) {
+                    if (i % 2 == 0) {
+                        chan += i + ', ';
+                    }
+                }
+
+                document.getElementById('showinfo1').innerHTML = "Số chẵn từ 1 - " + a + " là: " + chan;
+
+                for (var j = 1; j <= a; j++) {
+                    if (j & 2 != 0) {
+                        le += j + ', ';
+                    }
+                }
+                document.getElementById('showinfo2').innerHTML = "Số lẻ từ 1 - " + a + " là: " + le;
+            }
+        }
+
+
+    </script>
+
+</div>
+</body>
+</html>

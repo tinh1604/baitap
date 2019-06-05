@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài số 2</title>
+    <meta name="viewport" content="width=device-width,
+     initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/all.min.css"/>
+    <link rel="stylesheet" href="css/css.bai2.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<div id="block1">
+    <div id="header">
+        <i class="fas fa-comment-alt"></i><span> Ứng dụng chat độc thân: PHP39</span>
+    </div>
+    <div id="main">
+        <p id="show"></p>
+    </div>
+
+    <br/>
+    <div class="input-group mb-3">
+        <input id="messinput" type="text" class="form-control" placeholder="Nhập tin nhắn" value="">
+        <div class="input-group-append">
+            <button style="background: #f0ad4e; color: white; border: none" class="btn btn-outline-secondary"
+                    type="button" id="button-addon2" onclick="myfunction()">Gửi
+            </button>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    function getCurrentDateTime() {
+        var currentdate = new Date();
+        var datetime = currentdate.getDate() + "/"
+            + (currentdate.getMonth() + 1) + "/"
+            + currentdate.getFullYear() + " "
+            + currentdate.getHours() + ":"
+            + currentdate.getMinutes();
+        return datetime;
+    }
+
+    function myfunction() {
+        var mess = document.getElementById('messinput').value;
+       document.getElementById("show").innerHTML += "<div id='content1'><img src=\"imgs/anh1.png\" />php39</div>"
+           +"<i class=\"fas fa-snowflake\"> </i> " +getCurrentDateTime() +"<br/>" +"<span id='content2'></span>" +mess +"<br/>";
+    }
+</script>
+
+</body>
+</html>

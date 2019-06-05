@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+form {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    width: 30%;
+    background: bisque;
+    font-size: 15px;
+
+}
+input {
+    margin: 2.5%;
+    width: 95%;
+    border-radius: 8px;
+    padding: 1.5%;
+}
+h4 {
+    text-align: center;
+    padding: 3%;
+
+}
+p {
+    font-weight: bolder;
+    padding-left: 2%;
+    margin-bottom: 0;
+    margin-top: 2%;
+}
+
+.button1 {
+   background: #c0c0c0;
+    width: 95%;
+    margin-left: 2%;
+    margin-top: 2%;
+    color: black;
+    padding: 1.5%;
+}
+i{
+    font-size: 12px;
+}
+
+@media (max-width: 576px)
+{
+    form {
+        width: 95%;
+        font-size: 20px;
+
+    }
+    h4 {
+        font-size: 30px;
+    }
+    i{
+        font-size: 17px;
+    }
+
+}

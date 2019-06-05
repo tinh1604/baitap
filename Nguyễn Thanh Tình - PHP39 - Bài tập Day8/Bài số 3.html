@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+    <meta name="viewport" content="width=device-width,
+     initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/all.min.css"/>
+    <link rel="stylesheet" href="css/css.bai3.css"/>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<div id="block1">
+    <p id="header" class="content1">Brand Logo</p>
+    <ul class="content1">
+        <li ><i class="fas fa-tachometer-alt"></i> Dashboard </li>
+        <li ><i class="fas fa-gift bi"></i> UI Elements </li>
+        <li id="menu" ><i class="fas fa-globe-americas"></i> Services</li>
+            <ul id="submenu" >
+                <li class="content2"><i class="fas fa-angle-right bi"></i> New Service 1</li>
+                <li class="content2"><i class="fas fa-angle-right bi"></i> New Service 2</li>
+                <li class="content2"><i class="fas fa-angle-right bi"></i> New Service 3</li>
+            </ul>
+        <li > </i><i class="fas fa-car"></i> New</li>
+        <li ><i class="fas fa-user"></i> Profile</li>
+        <li ><i class="fas fa-users"></i> User </li>
+    </ul>
+</div>
+
+<script type="text/javascript">
+    $("#menu").click(function() {
+        $("#submenu").toggle();
+    });
+
+</script>
+</body>
+</html>

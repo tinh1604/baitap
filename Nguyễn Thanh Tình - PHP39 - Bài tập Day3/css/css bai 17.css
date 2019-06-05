@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*CSS BANNER*/
+#banner {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    background: #333333;
+    padding: 15px;
+    color: #fff;
+}
+
+.banner-number {
+    font-size: 50px;
+    position: absolute;
+    top: 5px;
+}
+
+.color-common {
+    color: #de7a20;
+}
+
+/*CSS MENU*/
+#menu ul li {
+    display: inline-block;
+    padding: 15px;
+    border-right: 1px solid #333;
+}
+
+#menu ul {
+    background: #666;
+}
+
+#menu ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/*CSS MAIN*/
+#main-left {
+    width: 70%;
+    float: left;
+}
+
+#main-right {
+    width: 30%;
+    height: 480px;
+    float: left;
+    background: #dddddd;
+}
+
+.left-content {
+    display: table;
+    /*padding: 15px;*/
+}
+
+.wrap-avatar, .wrap-content {
+    display: table-cell;
+}
+
+.wrap-content {
+    vertical-align: top;
+    padding-left: 20px;
+}
+
+.content-heading {
+    margin-bottom: 10px;
+}
+
+.content-description {
+    line-height: 1.6;
+}
+
+.content-readmore{
+    margin: 15px 0;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.left-content-wrap{
+    padding: 15px;
+}
+.sidebar-heading {
+    padding-left: 15px;
+    padding-top: 15px;
+}
+#sidebar-link ul li a {
+    color: #e6832a;
+    text-decoration: none;
+}
+.sidebar-ul {
+    list-style-type: none;
+    border-bottom: black;
+
+}
+.clearfix:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    clear: both;
+}
+#footer {
+    text-align: center;
+    background: #333333;
+    margin-top: -20px;
+    padding: 15px;
+}
+.other-description {
+    line-height: 1.5;
+    padding-left: 15px;
+}

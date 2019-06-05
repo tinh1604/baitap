@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài số 5</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <meta name="viewport" content="width=device-width,
+     initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/css.bai1.css"/>
+
+</head>
+<body>
+<div id="block">
+    <div id="header">
+        <a href='#' style="text-decoration: none">Kiểm tra số nguyên tố</a>
+    </div> <br/>
+    <form >
+        <label>Nhập vào số a:</label>
+        <input type="text" id="number1" class="form-control" value=""> <br/>
+        <br/>
+        <button type="button" class="btn btn-primary" onclick="myfunction()">Kiểm tra</button>
+        <br/>
+        <p id="showinfo" style="color: green"> </p>
+    </form>
+    <br/>
+    <script type="text/javascript">
+        function myfunction() {
+            var a =  document.getElementById("number1").value;
+            var check = true;
+            if (a<2){
+                check = false;
+            }
+            else{
+                for (var i=2; i<a-1; i++)
+                {
+                    if (a%i == 0){
+                        check = false;
+                        break;
+                    }
+                }
+            }
+
+            if (check == true){
+                document.getElementById('showinfo').innerHTML = +a +" là số nguyên tố <br/>";
+            }
+            else{
+            document.getElementById('showinfo').innerHTML = +a +" không phải là số nguyên tố <br/>";
+            }
+        }
+
+    </script>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài số 4</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <meta name="viewport" content="width=device-width,
+     initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/css.bai1.css"/>
+
+</head>
+<body>
+<div id="block">
+    <div id="header">
+        <a href='#' style="text-decoration: none">Giải phương trình bậc 2 một ẩn <br/> ax2 + bx + c = 0</a>
+    </div> <br/>
+    <form >
+        <label>Nhập vào hệ số a:</label>
+        <input type="text" id="number1" class="form-control" value=""> <br/>
+
+        <label>Nhập vào hệ số b:</label>
+        <input type="text" id="number2" class="form-control" value=""> <br/>
+
+        <label>Nhập vào hệ số c:</label>
+        <input type="text" id="number3" class="form-control" value=""> <br/>
+
+        <p>Phương trình bậc hai của bạn đang có dạng</p>
+        <p id="info1" style="color: blue"> </p>
+        <button type="button" class="btn btn-primary" onclick="myfunction()">Tìm x</button>
+
+        <p id="info2" style="color: green"> </p>
+    </form>
+    <br/>
+    <script type="text/javascript">
+        function myfunction() {
+            var a = document.getElementById("number1").value;
+            var b = document.getElementById("number2").value;
+            var c = document.getElementById("number3").value;
+            var a1 = parseInt(a);
+            var b1 = parseInt(b);
+            var c1 = parseInt(c);
+            var delta = b1*b1-4*a1*c1;
+            document.getElementById('info1').innerHTML = +a1 +"x2 +" +b1 +"x +" +c1 +"=0";
+            if (delta<0){
+                document.getElementById('info2').innerHTML = "Phương trình vô nghiệm";
+            }
+            // tại sao ở đây vẫn nhận a, b, c
+            else if (delta==0) {
+                document.getElementById('info2').innerHTML = "Phương trình có nghiệm kép x1 = x2 = " +(-b1/(2*a1));
+            }
+            else {
+                document.getElementById('info2').innerHTML = "Phương trình có 2 nghiệm:" +"<br>x1 = "+(-b1+Math.sqrt(delta))/(2*a1) +"<br>x2 = "+(-b1-Math.sqrt(delta))/(2*a1);
+            }
+        }
+
+    </script>
+
+</div>
+</body>
+</html>

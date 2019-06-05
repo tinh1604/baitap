@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài số 11</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <meta name="viewport" content="width=device-width,
+     initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/css.bai1.css"/>
+
+</head>
+<body>
+<div id="block">
+    <div id="header">
+        <a href='#' style="text-decoration: none">Tìm giai thừa</a>
+    </div> <br/>
+    <form >
+        <label>Nhập vào hệ số giai thừa:</label>
+        <input type="text" id="number1" class="form-control" value=""> <br/>
+        <br/>
+        <button type="button" class="btn btn-primary" onclick="myfunction()">Kiểm tra</button>
+        <br/>
+        <p id="showinfo" style="color: green"> </p>
+    </form>
+    <br/>
+    <script type="text/javascript">
+        function myfunction() {
+            var n = parseInt(document.getElementById('number1').value);
+            var m = n;
+            if (n == 0 || n == 1) {
+                document.getElementById("showinfo").innerHTML = +m +"! = 1"
+            }
+            else if (n>=2) {
+                var giaithua = n;
+                while(n > 1) {
+                    n--;
+                    giaithua = giaithua*n;
+                }
+                document.getElementById("showinfo").innerHTML = +m +"! = " +giaithua;
+            }
+            else {
+                document.getElementById("showinfo").innerHTML = "Giá trị nhập không có giai thừa";
+            }
+        }
+    </script>
+
+</div>
+</body>
+</html>

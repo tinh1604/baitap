@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài số 7</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <meta name="viewport" content="width=device-width,
+     initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/css.baichung.css"/>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+
+
+</head>
+<body>
+<div id="block">
+    <div id="header">
+        <p>Số nguyên tố</p>
+    </div>
+    <br/>
+    <form>
+        <label>Nhập số a</label>
+        <input type="text" id="number1" class="form-control" value=""> <br/>
+        <br/>
+               <button style="background: green; border: green" id="result" type="button" class="btn btn-primary"
+                onclick="myfunction()">Kiểm tra</button>
+        <br/> <br/>
+        <p id="showinfo" style="color: blue"></p>
+    </form>
+    <br/>
+    <script type="text/javascript">
+            function ktNguyenTo(snt){
+                var check = true;
+                if(snt<2){check = false;}
+                else {
+                    for (var i = 2; i < snt; i++){
+                        if (snt % i == 0) {
+                            check = false;
+                            break;
+                        }
+                    }
+                }
+                return check;
+            }
+            function myfunction(){
+                var a = parseInt(document.getElementById("number1").value);
+                var html = '';
+                for (var i = 1; i <= a; i++) {
+                    if (ktNguyenTo(i)){
+                        html += i + ', ';
+                    }
+                }
+                document.getElementById('showinfo').innerHTML = "Số nguyên tố từ 1 - "+a +" là: " +html ;
+        }
+
+
+
+
+
+    </script>
+
+</div>
+</body>
+</html>

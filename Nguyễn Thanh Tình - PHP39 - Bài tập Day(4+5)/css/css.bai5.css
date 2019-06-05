@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Times New Roman";
+}
+p {
+    font-size: 12px;
+    margin-top: 15px;
+
+}
+.main1 {
+    border: darkgrey 2px solid;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+p a {
+    color: green;
+    text-decoration: underline;
+}
+
+h5 {
+    margin-left: 2%;
+    margin-top: 2%;
+    font-weight: bold;
+}
+.img1 {
+    width: 150px;
+    height: 150px;
+}
+.content1 {
+    background: darkgrey;
+    padding-bottom: 12px;
+    padding-right: 5px;
+
+}
+@media (max-width: 576px)
+{
+    h5 {
+       text-align: center;
+        padding-top: 5%;
+        margin: 0;
+    }
+    .container{
+    width: 100%;
+}
+
+}

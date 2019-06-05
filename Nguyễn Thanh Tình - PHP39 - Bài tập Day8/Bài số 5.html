@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài số 5</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <meta name="viewport" content="width=device-width,
+     initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/css.baichung.css"/>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+
+
+</head>
+<body>
+<div id="block">
+    <div id="header">
+        <p>Chu vi và diện tích hình vuông</p>
+    </div>
+    <br/>
+    <form>
+        <label>Nhập vào cạnh (đơn vị: mét)</label>
+        <input type="text" id="number1" class="form-control" value=""> <br/>
+        <br/>
+               <button style="background: green; border: green" id="result" type="button" class="btn btn-primary"
+                onclick="return myfunction()">Tính chu vi và diện tích hình vuông</button>
+        <br/> <br/>
+        <p id="info1" style="color: green"></p>
+        <p id="info2" style="color: green"></p>
+    </form>
+    <br/>
+    <script type="text/javascript">
+        //dùng javascrip
+        function myfunction() {
+            var a = document.getElementById("number1").value;
+            var a1 = parseInt(a);
+            var cv = a1*4;
+            var dt = a1*a1;
+            if (a == ''){
+                alert("Không được để trống dữ liệu")
+            }
+            else if (isNaN(a)) {
+                alert("Cần nhập dữ liệu là số")
+            }
+            else{
+                document.getElementById('info1').innerHTML = "Chu vi = " + cv + "m";
+                document.getElementById('info2').innerHTML = "Diện tích = " + dt + "m<sup>2</sup>";
+            }
+return false;
+        }
+    </script>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: "Dosis-Regular";
+    src: url("../fonts/Dosis-Regular.otf");
+}
+#block1 {
+    width: 45%;
+    background: #4cc3fc;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2%;
+
+}
+#block2 {
+    width: 75%;
+    background: #fffef7;
+    margin-left: auto;
+    margin-right: auto;
+}
+#header1 {
+    color: #3775a6;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-left: 6%;
+    padding-top: 3%;
+    font-size: 12px;
+
+}
+#header2 {
+    font-weight: bold;
+    background: #120059;
+
+}
+#content1 {
+    color: #4cc3fc;
+    font-family: "Times New Roman";
+    padding-left: 20%;
+    padding-top: 5%;
+    padding-bottom: 2%;
+    font-size: 28px;
+    line-height: 1;
+
+}
+#content2 {
+    color: #4cc3fc;
+    font-family: Dosis-Regular;
+    font-size: 95px;
+    line-height: 1;
+
+}
+.content3 {
+    height: 10px;
+    color: #1680b6;
+    font-family: sans-serif;
+    font-size: 12px;
+    margin-left: 8px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+form {
+    margin-top: 10px;
+    width: 100%;
+}
+fieldset {
+    border: #4cc3fc 1px solid;
+}
+legend {
+    width: auto;
+}
+input {
+    border: none;
+    font-size: 12px;
+    margin-left: 15px;
+    width: 90%;
+    margin-bottom: 10px;
+}
+textarea {
+    border: none;
+    margin-left: 5px;
+}
+
+input[name="no"] {
+    border:#4cc3fc 0.5px solid;
+    width: 35px;
+    height: 35px;
+    padding-left: 10px;
+}
+
+
+button {
+    color: white;
+    font-family: Arial;
+    font-size: 15px;
+    line-height: 1;
+    padding: 10px;
+    background: #ff2e47;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    margin: 0px auto;
+    position: relative ;
+    top: 15px;
+
+}
+#content4 span {
+    font-size: 12px;
+}
+#content5 {
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+
+}
+#content6 {
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+#showinfo {
+   padding-left: 40%;
+
+}
+@media(max-width: 576px)
+{
+    #block1 {
+        width: 100%;
+    }
+    #content1 {
+
+        padding-left: 0%;
+        margin-left: 35%;
+
+    }
+    #content2 {
+        margin-left: 28%;
+    }
+    #header1 {
+        text-align: center;
+    }
+
+    }

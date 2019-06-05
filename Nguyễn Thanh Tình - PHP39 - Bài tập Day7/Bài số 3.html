@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài số 3</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <meta name="viewport" content="width=device-width,
+     initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/css.bai1.css"/>
+
+</head>
+<body>
+<div id="block">
+    <div id="header">
+        <a href='#' style="text-decoration: none">Giải phương trình bậc nhất <br/> ax + b = 0</a>
+    </div> <br/>
+    <form >
+        <label>Nhập vào hệ số a:</label>
+        <input type="text" id="number1" class="form-control" value=""> <br/>
+        <br/>
+        <label>Nhập vào hệ số b:</label>
+        <input type="text" id="number2" class="form-control" value=""> <br/>
+        <br/>
+        <p>Phương trình bậc nhất của bạn đang có dạng</p>
+        <p id="info1" style="color: blue"> </p>
+        <button type="button" class="btn btn-primary" onclick="myfunction()">Tìm x</button>
+        <br/>
+        <p id="info2" style="color: green"> </p>
+    </form>
+    <br/>
+    <script type="text/javascript">
+        function myfunction() {
+            var a = document.getElementById("number1").value;
+            var b = document.getElementById("number2").value;
+            var x = -b/a
+            document.getElementById('info1').innerHTML = +a +"x +" +b +" = 0";
+            document.getElementById('info2').innerHTML = "x = " +x;
+
+            // tại sao vẫn nhận a, b, c mà ko cần dùng hàm parseInt
+        }
+
+    </script>
+
+</div>
+</body>
+</html>

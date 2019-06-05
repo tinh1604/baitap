@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập Day 6</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <meta name="viewport" content="width=device-width,
+     initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/css.day6.css"/>
+
+</head>
+<body>
+<div id="block">
+    <div id="header">
+        <a href='#' style="text-decoration: none">Javascript Onsubmit Event <br/> Example</a>
+    </div> <br/>
+
+<form action="" onsubmit="return displayAlert()" >
+    <label>Name:</label>
+    <input id="inputname" class="form-control" type="text" value=""> <br/>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Email:</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="">
+    </div> <br/>
+    <label>Gender:</label> <br/>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="gender" id="gender-male" value="Male">
+        <label class="form-check-label" for="gender-male">Male</label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="gender" id="gender-female" value="Female">
+        <label class="form-check-label" for="gender-female">Female</label>
+    </div> <br/> <br/>
+    <label>Contac No:</label>
+    <input id="inputcontact" class="form-control" type="number" value=""> <br/>
+    <button type="submit">Submit</button>
+    <p id="showinfo"> </p>
+</form> <br/>
+    <script type="text/javascript">
+    function displayAlert() {
+        var value1 = document.getElementById('inputname').value;
+        var value2 = document.getElementById('exampleInputEmail1').value;
+        var value3 = document.getElementById('inputcontact').value;
+        var male = document.getElementById('gender-male');
+        var female = document.getElementById('gender-female');
+        if (female.checked) {
+            document.getElementById('showinfo').innerHTML = "Name: " + value1 +"<br/>Email: " +value2 +"<br/>Contact No: " +value3 +"<br/>Gender: " +female.value;
+            alert("Thông tin đăng nhập: " +"\nName: " + value1 + "\nEmail: " + value2 + "\nContact No: " + value3 +"\nGender: " +female.value) ;
+        }
+        else if (male.checked) {
+            document.getElementById('showinfo').innerHTML = "Name: " + value1 +"<br/>Email: " +value2 +"<br/>Contact No: " +value3 +"<br/>Gender: " +male.value;
+            alert("Thông tin đăng nhập: " +"\nName: " + value1 + "\nEmail: " + value2 + "\nContact No: " + value3 +"\nGender: " +male.value) ;
+        }
+        else {
+        alert("Bạn chưa chọn giới tính")
+        }
+        return false;
+    }
+    </script>
+
+</div>
+</body>
+</html>

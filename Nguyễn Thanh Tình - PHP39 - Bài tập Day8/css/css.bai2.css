@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#block1 {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    border: darkgrey 1px solid;
+    margin-top: 2%;
+}
+#header {
+    background: #dff0d8;
+    padding: 10px;
+    color: #3c763d;
+}
+#main {
+    width: 98%;
+
+}
+#content1 {
+    width: 70%;
+    display: inline-block;
+    font-weight: bolder;
+    color: #31708f;
+
+}
+#content2 {
+    margin-left: 68px;
+}

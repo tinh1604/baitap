@@ -1,0 +1,51 @@
+
+* {
+    margin: 0; padding: 0;
+}
+#block{
+    border: darkgrey 1px solid;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    font-family: sans-serif;
+
+
+}
+
+
+form{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+#header{
+    margin-left: auto;
+    margin-right: auto;
+    background: #feffed;
+    text-align: center;
+    border-bottom: darkgrey 1px solid;
+    padding: 15px;
+    font-size: 25px;
+    color: black;
+}
+button{
+    color: white;
+    border: none;
+    font-weight: bold;
+    padding: 15px;
+    margin: 10px;
+}
+
+@media (max-width: 576px)
+{
+
+
+    #block {
+        border: darkgrey 1px solid;
+        width: 100%;
+        margin-top: 0;
+    }
+}
