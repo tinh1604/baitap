@@ -7,38 +7,41 @@
      initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/do_an.css"/>
+    <link rel="stylesheet" href="css/all.min.css"/>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+
 </head>
 </head>
 <body>
 <div id="block1">
     <div id="header">
         <ul id="menu1">
-            <li><a href="" class="group1" class="hvr-grow">home</a></li>
-            <li><a href="" class="group1" class="hvr-grow">contact us</a></li>
-            <li><a href="" class="group1" class="hvr-grow">sitemap</a></li>
-            <li><a href="" class="group1" class="hvr-grow">login</a></li>
+            <li><a href="" class="hvr-shrink" >home</a></li>
+            <li><a href="" class="hvr-shrink" >contact us</a></li>
+            <li><a href="" class="hvr-shrink" >sitemap</a></li>
+            <li><a href="" class="hvr-shrink" >login</a></li>
         </ul>
 
-        <img id="img1" src="imgs/logo.png"/>
+        <img id="img1" src="imgs/logo3.jpg"/>
         <ul id="menu2">
-            <li><a href="" class="hvr-float-shadow" >Home</a></li>
+            <li><a href="" class="hvr-float-shadow">Home</a></li>
             <li><a href="" class="hvr-float-shadow">News</a></li>
             <li><a href="" class="hvr-float-shadow">Shop</a></li>
             <li><a href="" class="hvr-float-shadow">About our Coffee</a></li>
             <li><a href="" class="hvr-float-shadow">Menu & Nutrition</a></li>
             <li><a href="" class="hvr-float-shadow">Gift Cards</a></li>
         </ul>
-        <div class="container" style="width: 60%; margin-left: 35%">
+        <div class="container" style="width: 60%; margin-left: 55%">
             <div class="row">
-                <div class="col-md-8 col-12">
+                <div class="col-md-5 col-12">
                     <p id="content1">Have A Sweet Time!</p>
                     <p id="content2">GOOD coffee</p>
                 </div>
-                <div id="menu3" class="col-md-4 col-12">
+                <div id="menu3" class="col-md-3 col-12">
                     <p id="content3">Sevice Menu</p>
-                    <a href="" class="hvr-float-shadow">Customer center</a> <br/>
-                    <a href="" class="hvr-float-shadow">Coffee FAQ</a> <br/>
-                    <a href="" class="hvr-float-shadow">Free boad</a> <br/>
+                    <a href="" class="hvr-forward"><i class="fas fa-address-card"></i> Customer center</a> <br/>
+                    <a href="" class="hvr-forward"><i class="fas fa-coffee"></i> Coffee FAQ</a> <br/>
+                    <a href="" class="hvr-forward"><i class="fas fa-list-alt"></i> Free board</a> <br/>
                 </div>
 
             </div>
@@ -54,10 +57,10 @@
 
                             <p id="content4">COFFEE</p>
                             <ul id="content5">
-                                <li><a href="" class="group3">BEAN NEWS</a></li>
-                                <li><a href="" class="group3">BEAN TEST</a></li>
-                                <li><a href="" class="group3">ONLINE MARKET</a></li>
-                                <li><a href="" class="group3">COFFEE STORY</a></li>
+                                <li ><a id="hov1" href="" class="group1"><div id="circle1" class="my-div"></div> BEAN NEWS</a></li>
+                                <li><a id="hov2" href="" class="group1"><div id="circle2"  class="my-div"></div> BEAN TEST</a></li>
+                                <li><a id="hov3" href="" class="group1"><div id="circle3"  class="my-div"></div> ONLINE MARKET</a></li>
+                                <li><a id="hov4" href="" class="group1"><div id="circle4"  class="my-div"></div> COFFEE STORY</a></li>
                             </ul>
                             <p id="content6">News</p>
                         </div>
@@ -145,6 +148,28 @@
     </div>
 
 </div>
+<script type="text/javascript">
 
+    $('#hov1').hover(function(){
+        $('#circle1').css('background','#ffb800');
+    },function(){
+        $('#circle1').css('background','none');
+    });
+    $('#hov2').hover(function(){
+        $('#circle2').css('background','#ffb800');
+    },function(){
+        $('#circle2').css('background','none');
+    });
+    $('#hov3').hover(function(){
+        $('#circle3').css('background','#ffb800');
+    },function(){
+        $('#circle3').css('background','none');
+    });
+    $('#hov4').hover(function(){
+        $('#circle4').css('background','#ffb800');
+    },function(){
+        $('#circle4').css('background','none');
+    });
+</script>
 </body>
 </html>
