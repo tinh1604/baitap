@@ -46,6 +46,8 @@
     margin-top: 60px;
     padding-left: 20%;
     background: #a56317;
+    background : linear-gradient(to bottom, #a56317, #f5deb3);
+
 }
 
 #img1 {
@@ -125,6 +127,7 @@ a:link {
     text-align: center;
     margin: 0px auto;
     padding: 10px;
+    border: #593200 2px solid;
 }
 
 #content5 {
@@ -135,6 +138,10 @@ a:link {
     margin-right: auto;
     margin-top: -5px;
     font-family: sans-serif;
+    border: #593200 2px solid;
+    background : linear-gradient(to bottom, #947443, #f5deb3);
+
+
 }
 
 #content6 {
@@ -157,6 +164,8 @@ a:link {
 #menu3 {
     background: #fbeec1;
     border-radius: 10px;
+    background : linear-gradient(to bottom, #d38a23, #f5deb3);
+
 }
 
 #content8 {
@@ -317,7 +326,7 @@ a:link {
     width: 135px;
     border-bottom: grey 1px solid;
     display: block;
-    margin-left: 8px;
+    margin: 0px auto;
     padding: 5px;
     display: inline-block;
     vertical-align: middle;
@@ -415,48 +424,63 @@ a:link {
     background: #f0ddb5;
     padding: 10px;
     border-radius: 25px;
+    background : linear-gradient(to bottom, #f0ddb5, white);
+
 }
 #block3 {
     width: 100%;
     background: #99dcf7;
     padding: 10px;
     border-radius: 25px;
+    background : linear-gradient(to bottom, #99dcf7, white);
+
 }
 #block4 {
     width: 100%;
     background: #f0ddb5;
     padding: 10px;
     border-radius: 25px;
+    background : linear-gradient(to bottom, #f0ddb5, white);
+
 }
 #block5 {
     width: 100%;
     background: #d1bfa9;
     padding: 10px;
     border-radius: 25px;
+    background : linear-gradient(to bottom, #d1bfa9, white);
+
 }
 #block6 {
     width: 110%;
     background: #cfbda7;
     padding: 10px;
     border-radius: 25px;
+    background : linear-gradient(to bottom, #cfbda7, white);
+
 }
 #block7 {
     width: 110%;
     background: #d3cf6e;
     padding: 10px;
     border-radius: 25px;
+    background : linear-gradient(to bottom, #d3cf6e, white);
+
 }
 #block8 {
     width: 110%;
     background: #ffcd74;
     padding: 10px;
     border-radius: 25px;
+    background : linear-gradient(to bottom, #ffcd74, white);
+
 }
 #block9 {
     width: 110%;
     background: #96dbf8;
     padding: 10px;
     border-radius: 25px;
+    background : linear-gradient(to bottom, #94dbf9, white);
 }
 
 .content10 {
