@@ -1,0 +1,50 @@
+CREATE DATABASE IF NOT EXISTS database_nguyenthanhtinh CHARACTER SET 'utf8' COLLATE 'utf8_unicode_ci';
+USE database_nguyenthanhtinh;
+
+CREATE TABLE salaries(
+emp_no INT(10) NOT NULL AUTO_INCREMENT,
+salary INT(11),
+from_date DATE,
+to_date DATE,
+PRIMARY KEY (emp_no)
+);
+
+CREATE TABLE tittles(
+emp_no INT(10) NOT NULL AUTO_INCREMENT,
+tittle VARCHAR(50),
+from_date DATE,
+to_date DATE,
+PRIMARY KEY (emp_no)
+);
+
+CREATE TABLE employees(
+emp_no INT(10) NOT NULL AUTO_INCREMENT,
+birth_date DATE,
+first_name VARCHAR(14),
+last_name VARCHAR(16),
+gender INT(10),
+hire_date DATE,
+PRIMARY KEY (emp_no)
+);
+
+CREATE TABLE dept_manager(
+dept_no CHAR(4) NOT NULL,
+emp_no INT(10),
+from_date DATE,
+to_date DATE,
+PRIMARY KEY (dept_no)
+);
+
+CREATE TABLE dept_emp(
+emp_no INT(10) NOT NULL AUTO_INCREMENT,
+dept_no CHAR(4),
+from_date DATE,
+to_date DATE,
+PRIMARY KEY (emp_no)
+);
+
+CREATE TABLE departments(
+dept_no CHAR(4),
+dept_name VARCHAR(40),
+PRIMARY KEY (dept_no)
+);

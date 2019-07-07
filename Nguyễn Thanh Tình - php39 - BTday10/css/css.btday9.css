@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: "Lato-Black";
+    src: url("../fonts/Lato-Black.ttf");
+}
+@font-face {
+    font-family: "Lato-LightItalic";
+    src: url("../fonts/Lato-LightItalic.ttf");
+}
+@font-face {
+    font-family: "Lato-Regular";
+    src: url("../fonts/Lato-Regular.ttf");
+}
+
+#block {
+    width: 80%;
+    margin: 0px auto;
+}
+#menu{
+    background: #262626;
+
+}
+#header {
+    background: #2a2a2a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+
+}
+#img1 {
+    display: inline-block;
+    margin-left: 10%;
+}
+
+#content1 {
+    display: inline-block;
+    color: white;
+    padding-left: 30%;
+    font-size: 10px;
+    font-family: Lato-Black;
+}
+.content2 {
+    text-align: center;
+    font-weight: bold;
+    color: #616161;
+}
+.content3 {
+    text-align: center;
+    color: #616161;
+    font-size: 11px;
+    line-height: 2;
+    font-family: Lato-Regular;
+
+}
+#content4 {
+    text-align: center;
+    color: #616161;
+    font-size: 25px;
+    font-family: Lato-Black;
+
+}
+#content5{
+     text-align: center;
+     color: #616161;
+     font-size: 18px;
+    font-family: Lato-Light;
+ }
+#content6 {
+    width: 37%;
+    display: block;
+    margin: 0 auto;
+}
+#content7 {
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+    font-family: Lato-Black;
+    font-size: 20px;
+
+}
+#content8 {
+    text-align: center;
+    color: #939393;
+    font-family: Lato-Light;
+    font-size: 12px;
+
+}
+.content9 {
+    color: white;
+    font-size: 10px;
+    color: #939393;
+
+}
+#content10 {
+    text-align: center;
+    color: #939393;
+
+}
+#content11 {
+    text-align: center;
+    font-size: 10px;
+    color: white;
+    padding: 15px;
+    background: #2a2a2a;
+    color: #939393;
+    font-family: Lato-Regular;
+}
+#content12 {
+    font-size: 30px;
+    font-family: Lato-Light;
+
+}
+#content13 {
+    font-size: 35px;
+    font-family: Lato-Black;
+
+}
+#content14 {
+    font-size: 25px;
+    font-family: Lato-LightItalic;
+}
+#content15 {
+    font-size: 10px;
+    font-family: Lato-Black;
+}
+a:link{
+    text-decoration: none;
+}
+a{
+    color: white;
+}
+li {
+    list-style: none;
+    display: inline-block;
+    padding: 12px;
+}
+li a:hover {
+    color: #ea6660;
+}
+button a:hover {
+    color: cyan;
+}
+#main1 {
+    background: #f8f8f8;
+}
+#main2 {
+    background: #ffffff;
+    padding-top: 40px;
+
+}
+.img2 {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+}
+.img3 {
+    width: 110%;
+    height: 100%;
+}
+.img4 {
+    width: 20px;
+    height: 20px;
+}
+.img5 {
+    width: 130px;
+    height: 30px;
+    margin: 0 auto;
+}
+#footer {
+    background: #313131;
+    line-height: 1;
+}
+.row {
+    margin-bottom: 10px;
+}
+div#content6 > button:hover {
+    background: #595959;
+    border: none;
+}
+@media(max-width: 696px) {
+
+    #img1{
+        display: block;
+        margin: 0 auto;
+    }
+    #content1 {
+        font-size: 15px;
+        padding-left: 0px;
+        width: 100%;
+        margin: 0px auto;
+        text-align: center;
+    }
+
+
+    #content6 {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .img3 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+    }
+    #content8 {
+        font-size: 14px;
+    }
+    .content9 {
+        font-size: 12px;
+    }
+
+    #content11 {
+        font-size: 12px;
+    }
+    .img3 {
+        width: 100%;
+        height: 90%;
+    }
+    div#content6 > button {
+        margin: 10px auto;
+    }
+    #block {
+        width: 100%;
+    }
+
+
+}
