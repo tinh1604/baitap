@@ -1,0 +1,16 @@
+.btn-create{
+    /*margin: 20px 0;*/
+    margin-bottom: 10px;
+    float: right;
+}
+
+#main-content {
+    margin: 20px auto;
+}
+
+body {
+    margin: 20px auto;
+}
+h2 {
+    text-align: center;
+}
